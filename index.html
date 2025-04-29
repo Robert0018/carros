@@ -1,192 +1,165 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Projeto 05</title>
-	<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-	<link rel="shortcut icon" href="/favicon.ico" />
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-	<meta name="apple-mobile-web-app-title" content="MyWebSite" />
-	<link rel="manifest" href="/site.webmanifest" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet"/>
-	<link href="styles.css" rel="stylesheet"/>
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/>
-	<meta charset="utf-8"/>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<title>Projeto_03</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script src="js/jquery.js" defer></script>
 	<script src="js/functions.js" defer></script>
+	<script src="js/menu_responsivo.js" defer></script>
+	<script src="js/menuScroll.js" defer></script>
+	<script src="js/sliderEquipe.js" defer></script>
 </head>
 <body>
-
 <header>
-
 	<div class="container">
-	<div class="logo">
-		<img src="imagens/logo.jpg" />
-	</div><!--logo-->
-
-	<nav class="desktop">
+	<div class="logo"></div><!--logo-->
+	<nav class="desktop-menu">
 		<ul>
-			<li><a style="color:#EB2D2D;" href="index.html">Home</a></li>
-			<li><a href="venda.html">Venda</a></li>
-			<li><a href="sobre.html">Sobre</a></li>
-			<li><a goto="contato" href="">Contato</a></li>
+			<li><a href="">Home</a></li>
+			<li><a href="#servicos">Serviço</a></li>
+			<li><a href="#sobre">Sobre</a></li>
+			<li><a href="#contato">Contato</a></li>
 		</ul>
-	</nav><!--desktop-->
-
-	<nav class="mobile">
+	</nav><!--desktop-menu-->
+	<nav class="mobile-menu">
 		<ul>
-			<li><a style="color:#EB2D2D;" href="index.html">Home</a></li>
-			<li><a href="venda.html">Venda</a></li>
-			<li><a href="sobre.html">Sobre</a></li>
-			<li><a goto="contato" href="">Contato</a></li>
+			<li><a href="">Home</a></li>
+			<li><a href="#servicos">Serviço</a></li>
+			<li><a href="#sobre">Sobre</a></li>
+			<li><a href="#contato">Contato</a></li>
 		</ul>
-	</nav><!--mobile-->
-
+	</nav><!--desktop-menu-->
 	<div class="clear"></div>
+
+	<div class="chamada1">
+		<h2>Sistemas Próprios<br>
+		Para Empresas Autênticas</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur finibus tincidunt magna, eu dapibus nibh interdum at. Intege.</p>
+	</div><!--chamada1-->
+
 	</div><!--container-->
 </header>
-
-<section class="banner">
+<section id="servicos" class="sessao1">
 	<div class="container">
-	<div class="text-banner">
-		<div class="text-banner-single">Consultoria</div>
-		<div class="text-banner-single">Compra</div>
-		<div class="text-banner-single">Venda</div>
-		<div class="text-banner-single">e-mail@hotmail.com</div>
-	</div><!--text-banner-->
+		<div class="texto-sessao1">
+			<h2>Desenvolvemos Sistemas Únicos</h2>
+			<p>Lorem ipsum Silor domor amet</p>
+			<ul>
+				<li>Sites</li>
+				<li>Lojas virtuais</li>
+				<li>Sistemas</li>
+			</ul>
+			<div class="clear"></div>
+			<div class="btn1-texto">Entre em contato</div>
+		</div><!--texto-sessao1-->
+		<div class="device-sessao1"></div><!--device-sessao1-->
+		<div class="clear"></div>
 	</div><!--container-->
-</section><!--banner-->
-
-<section class="veiculos-destaque">
-	<div class="line-titulo">
-		<div class="ln1"></div>
-		<h2>Veículos em destaque</h2>
-	</div><!--line-titulo-->
+</section><!--sessao1-->
+<section  id="sobre" class="sessao2">
 	<div class="container">
-	<div class="vitrine-destaque">
-		<div style="background-image:url('imagens/Karmann-Ghia.webp');" class="carro-img"></div><!--carro-img-->
-		<div class="info-carro">
-			<h2>Volkswagen Karmann-ghia</h2>
-			<p>1.6 8v, Gasolina, 2P, Manual1969</p>
-			<a class="btn1" href="veiculo-teste.html">Mais Detalhes</a>
-		</div><!--info-carro-->
-	</div><!--vitrine-destaque-->
+		<h2>Desenvolvido de pessoas para pessoas</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut sodales sem, quis facilisis eros. Cras eleifend consequat nulla, ut vestibulum purus posuere vitae. Sed ac varius enim, eget eleifend neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tristique, dui ac bibendum porttitor, orci velit cursus magna, in dapibus nibh tellus nec mi. Etiam dictum finibus tellus, at sollicitudin nunc laoreet non. Morbi in lacinia erat, sit amet venenatis lorem. Mauris imperdiet mi tempor tortor tristique dictum. Aliquam gravida ornare nisi a ullamcorper. Praesent eleifend ligula sit amet lectus egestas auctor.</p>
+	<img src="imagens/smartphone.webp">
+	</div><!--container-->
+</section><!--sessao2-->
+<section id="contato" class="sessao3">
+	<div class="parte1">
+		<div class="wraper-parte1">
+		<h2>Nosso time</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor risus, feugiat eu efficitur non, efficitur vel erat. Sed et ex sed arcu consequat egestas. Donec at egestas massa, eget cursus dui. Pellentesque et felis neque. Curabitur a ornare lacus. Sed sed dui vehicula, imperdiet neque sit amet, ullamcorper purus. Sed ultrices venenatis nisi eget ultricies. Suspendisse eget vehicula ex. Nulla nec justo eu mauris viverra ornare non ut nisi.</p>
+		</div><!--wraper-parte1-->
+	</div><!--parte1-->
+	<div class="parte2">
+		<div class="scrollEquipe">
+		<div class="scroll-wraper">
+		<div class="sobre-autor">
+			<div class="titulo-autor">
+				<div class="wraper-titulo-autor">
+			<h2>Robert Silva</h2>
+			<p>Co-Founder / Desenvolvedor</p>
+		</div><!--wraper-titulo-autor-->
+			<div class="img-autor"></div>
+		</div><!--titulo-autor-->
+		<div class="texto-autor">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et pulvinar leo, quis lacinia nisi. Curabitur eget metus ante. Donec efficitur accumsan mollis.</p>
+		</div><!--texto-autor-->
+		</div><!--sobre-autor-->
 
-	<div class="vitrine-destaque">
-		<div style="background-image:url('imagens/carro2.webp');" class="carro-img"></div><!--carro-img-->
-		<div class="info-carro">
-			<h2>Chevrolet Corvette Conversível</h2>
-			<p>4.6 16v, Gasolina, 2P, Manual1960</p>
-			<a class="btn1" href="veiculo-teste.html">Mais Detalhes</a>
-		</div><!--info-carro-->
-	</div><!--vitrine-destaque-->
+		<div class="sobre-autor">
+			<div class="titulo-autor">
+				<div class="wraper-titulo-autor">
+			<h2>Robert Silva</h2>
+			<p>Co-Founder / Desenvolvedor</p>
+		</div><!--wraper-titulo-autor-->
+			<div class="img-autor"></div>
+		</div><!--titulo-autor-->
+		<div class="texto-autor">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et pulvinar leo, quis lacinia nisi. Curabitur eget metus ante. Donec efficitur accumsan mollis.</p>
+		</div><!--texto-autor-->
+		</div><!--sobre-autor-->
 
-	<div class="vitrine-destaque">
-		<div style="background-image:url('imagens/Chevrolet-Opala-Diplomata.jpeg');" class="carro-img"></div><!--carro-img-->
-		<div class="info-carro">
-			<h2>Chevrolet Opala Diplomata</h2>
-			<p>4.1 12v, Gasolina, 4P, Manual1992</p>
-			<a class="btn1" href="veiculo-teste.html">Mais Detalhes</a>
-		</div><!--info-carro-->
-	</div><!--vitrine-destaque-->
+		<div class="sobre-autor">
+			<div class="titulo-autor">
+				<div class="wraper-titulo-autor">
+			<h2>Robert Silva</h2>
+			<p>Co-Founder / Desenvolvedor</p>
+		</div><!--wraper-titulo-autor-->
+			<div class="img-autor"></div>
+		</div><!--titulo-autor-->
+		<div class="texto-autor">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et pulvinar leo, quis lacinia nisi. Curabitur eget metus ante. Donec efficitur accumsan mollis.</p>
+		</div><!--texto-autor-->
+		</div><!--sobre-autor-->
+		</div><!--scroll-wraper-->
+		</div><!--scrollEquipe-->
+		<div class="slider-bullets"></div><!--slider-bullets-->
+	</div><!--parte2-->
 	<div class="clear"></div>
+</section><!--sessao3-->
+<section class="sessao4">
+	<div class="container">
+		<div class="form">
+			<h2>Entre em contato</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et pulvinar leo, quis lacinia nisi. Curabitur eget metus ante. Donec efficitur accumsan mollis.</p>
+
+			<form action="https://formsubmit.co/robertsilva16099@gmail.com" method="POST">
+				<input type="text" name="nome" placeholder="Nome*" required>
+				<input type="text" name="email" placeholder="E-mail*" required>
+				<textarea name="mensagem" placeholder="Mensagem*" required></textarea>
+				<div class="clear"></div>
+				<div><input type="submit" value="enviar"></div>
+			</form>
+		</div><!--form-->
+		<div class="map-wraper">
+			<h2>Faça uma visita</h2>
+			<div class="map-wraper3">
+			<div class="map-wraper2">
+			<div id="map" class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.011195399532!2d-38.463255499999995!3d-12.8425529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716123e161aae03%3A0x7673d5c138c87d14!2sR.%20Ferreira%2C%2011%20-%20Paripe%2C%20Salvador%20-%20BA%2C%2040830-650!5e0!3m2!1spt-BR!2sbr!4v1740103066023!5m2!1spt-BR!2sbr"></iframe>
+			</div><!--map-->
+		</div><!--map-wraper2-->
+		</div><!--map-wraper-3-->
+	</div><!--map-wraper-->
+
+		<div class="clear"></div>
 	</div><!--container-->
-</section><!--veiculos-destaque-->
-
-<section class="servicos-descricao">
-	<div class="half1">
-		<div class="half1-wraper">
-		<h2>Serviços</h2>
-		<ul>
-			<li>Compra</li>
-			<li>Venda</li>
-			<li>Consultoria de veículos</li>
-			<li>Indicação de Mecânicos e peças</li>
-		</ul>
-		<a class="btn1" href="">Saiba mais</a>
-		</div>
-	</div><!--half-1-->
-
-	<div class="half2">
-
-		<h2>Depoimentos</h2>
-		<div class="depoimento-single">
-			<p>“O Robert foi muito atencioso, me buscou no aeroporto
-			e garantiu toda comodidade e conforto no almoço, no transfer, na visita ao veículo e durante o test-drive”</p>
-
-			<p>“O Rodrigo foi muito atencioso, me buscou no aeroporto
-			e garantiu toda comodidade e conforto no almoço, no transfer, na visita ao veículo e durante o test-drive”</p>
-
-			<p>“O Wanderson foi muito atencioso, me buscou no aeroporto
-			e garantiu toda comodidade e conforto no almoço, no transfer, na visita ao veículo e durante o test-drive”</p>
-
-			<p>“O Wesley foi muito atencioso, me buscou no aeroporto
-			e garantiu toda comodidade e conforto no almoço, no transfer, na visita ao veículo e durante o test-drive”</p>
-
-			<div class="navigation">
-				<div class="arrows">
-					<img prev src="imagens/arrow-left.png" />
-					<img next src="imagens/arrow-right.png" />
-				</div><!--arrows-->
-				<div class="nome-depoimento">Robert Silva</div>
-			</div><!--navigation-->
-		</div><!--depoimento-single-->
-	</div><!--half2-->
-
-</section><!--servicos-descricao-->
-
-<section class="contato" id="contato">
-	<div class="line-titulo">
-		<div class="ln1"></div>
-		<h2>Contato</h2>
-	</div><!--line-titulo-->
-</form>
-	
-	<form action="https://formspree.io/f/{form_id}" method="post">
-	  <label for="email">robertsilva1699@gmail.com</label>
-	  <input name="Email" id="email" type="email">
-		<div class="input-wraper w100">
-			<input placeholder="Nome*" type="text" required />
-		</div><!--input-wraper-->
-
-		<div class="input-wraper w50">
-			<input placeholder="E-mail*" type="text" required />
-		</div><!--input-wraper-->
-
-		<div class="input-wraper w50">
-			<input placeholder="Telefone*" type="text" required />
-		</div><!--input-wraper-->
-
-		<div class="input-wraper w100">
-			<textarea placeholder="Mensagem*" required></textarea>
-		</div><!--input-wraper-->
-
-		<div class="input-wraper w100">
-			<input class="btn1" type="submit" value="Enviar" />
-		</div><!--input-wraper-->
-
-		<div class="clear"></div><!--clear-->
-
-	</form>
-
-</section><!--contato-->
+</section><!--sessao4-->
 
 <footer>
 	<div class="container">
-	<nav>
-		<ul>
-			<li><a style="color:#EB2D2D;" href="index.html">Home</a></li>
-			<li><a href="venda.html">Venda</a></li>
-			<li><a href="sobre.html">Sobre</a></li>
-			<li><a href="#contato">Contato</a></li>
-		</ul>
-	</nav>
-	<p>Todos os direitos reservados</p>
-	<div class="clear"></div>
+		<p>Todos os direitos reservados</p>
+		<p>contato@dankicode.com</p>
+		<div class="clear"></div>
 	</div><!--container-->
 </footer>
 
 </body>
-</html>
+</html>	
