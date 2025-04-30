@@ -3,17 +3,20 @@ $(function() {
     var isDrag = false;
     var preco_maximo = 70000;
     var preco_atual = 0;
+    var pointerWidth = 26; // Largura do ponteiro em pixels
 
     // Eventos para desktop
     $('.pointer-barra').mousedown(function(e) {
         e.preventDefault();
         isDrag = true;
+        disableTextSelection();
     });
 
     // Eventos para mobile
     $('.pointer-barra').on('touchstart', function(e) {
         e.preventDefault();
         isDrag = true;
+        disableTextSelection();
     });
 
     $(document).mouseup(function() {
@@ -33,12 +36,11 @@ $(function() {
     });
 
     $('.barra-preco').on('touchmove', function(e) {
-        e.preventDefault();
         if (isDrag) {
+            e.preventDefault();
             var touch = e.originalEvent.touches[0];
-            var rect = this.getBoundingClientRect();
             var customEvent = {
-                pageX: touch.pageX - rect.left
+                pageX: touch.pageX
             };
             handleMove(customEvent);
         }
@@ -46,19 +48,26 @@ $(function() {
 
     function handleMove(e) {
         var elBase = $('.barra-preco');
+        var barraOffset = elBase.offset().left;
         var barraWidth = elBase.width();
-        var mouseX = e.pageX;
+        var mouseX = e.pageX - barraOffset;
 
-        // Limitar aos limites da barra
+        // Ajuste preciso dos limites
         mouseX = Math.max(0, Math.min(mouseX, barraWidth));
 
-        $('.pointer-barra').css('left', (mouseX - 13) + 'px');
-        currentValue = (mouseX / barraWidth) * 100;
-        $('.barra-preco-fill').css('width', currentValue + '%');
+        // Cálculo da posição centralizada
+        var pointerPosition = mouseX - (pointerWidth / 2);
+        
+        // Atualização suave
+        requestAnimationFrame(function() {
+            $('.pointer-barra').css('left', pointerPosition + 'px');
+            currentValue = (mouseX / barraWidth) * 100;
+            $('.barra-preco-fill').css('width', currentValue + '%');
 
-        preco_atual = currentValue/100 * preco_maximo;
-        preco_atual = formatarPreco(preco_atual);
-        $('.preco_pesquisa').html('R$'+preco_atual);
+            preco_atual = currentValue/100 * preco_maximo;
+            preco_atual = formatarPreco(preco_atual);
+            $('.preco_pesquisa').html('R$'+preco_atual);
+        });
     }
 
     function formatarPreco(preco_atual) {
