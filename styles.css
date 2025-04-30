@@ -757,7 +757,7 @@ section.sobre .container{
 }
 
 section.sobre .img-destaque-sobre{
-	width: 100%;
+	background-size: 100% 100%;
 	padding-top:60%;
 	background-image: url(imagens/Porsche-911.jpg);
 	box-shadow: 7px 7px 15px 0.3px;
@@ -864,7 +864,7 @@ section.sobre .descricao-autor{
 	}
 
 	section.banner{
-		background-size: cover;
+		background-size: contain;
 		background-position: 100px center;
 		height: 80vh;
 	}
