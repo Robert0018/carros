@@ -519,6 +519,16 @@ section.venda{
 	position: relative;
 }
 
+.barra-preco{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .barra-preco-fill{
 	position: absolute;
 	left: 0;
@@ -539,6 +549,10 @@ section.venda{
 	border-radius: 8px;
 	background:linear-gradient(to bottom,rgb(255,255,255),rgb(180,180,180));
 	border:1px solid  #777;
+	touch-action: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;	
+    user-select: none;
 }
 
 .valor-pesquisa{
