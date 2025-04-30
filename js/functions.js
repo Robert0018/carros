@@ -156,10 +156,8 @@ $(function() {
     }
 
     // Navegação para contato
-    var directory = '/Projetos/projeto_05/';
-
     $('[goto=contato]').click(function() {
-        location.href=directory+'index.html?contato';
+        location.href='index.html?contato';
         return false;
     });
 
